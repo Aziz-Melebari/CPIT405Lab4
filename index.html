@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lab4</title>
+
+  <style>
+      body {
+
+          width: 600px;
+      }
+
+
+
+      input, textarea {
+          width: 60%;
+          margin-bottom: 10px;
+          margin-top: 5px;
+      }
+
+      .submit-btn {
+          width: 367px;
+          background-color: black;
+          color: white;
+          height: 35px;
+      }
+  </style>
+
+</head>
+
+<body>
+
+<h1 style="text-align: left">Great Auto Parts  Order Form</h1>
+
+<div>
+  <label for="fname">First Name:</label> <br>
+  <input type="text" id="fname" placeholder="Enter your first name"><br>
+
+  <label for="lname">Last Name:</label> <br>
+  <input type="text" id="lname" placeholder="Enter your last name"><br>
+
+  <label for="email">Email:</label> <br>
+  <input id="email" type="email" placeholder="Enter your email address"><br>
+
+  <label for="phonenumber">Phone number:</label> <br>
+  <input id="phonenumber" type="tel" placeholder="Enter your phone number"><br>
+
+  <label for="make" >Make:</label> <br>
+  <input id="make" type="text" placeholder="Make"><br>
+
+  <label for="model" >Model:</label> <br>
+  <input type="text" id="model" placeholder="Model"><br>
+
+  <label for="year">Year:</label> <br>
+  <input type="number" id="year" placeholder="Year"><br>
+
+  <label for="date" onclick="document.getElementById('date').showPicker()" >Date:</label><br>
+  <input id="date" onclick="this.showPicker()" type="date"><br>
+
+  <label for="sparepart">Spare Part:</label><br>
+  <input type="text" id="sparepart" placeholder="Enter the spare part you need"><br>
+
+  <label for="quantity" >Quantity:</label><br>
+  <input type="number" id="quantity" placeholder="Enter the quantity of the spare part you need"><br>
+
+  <label for="comment" >Comment:</label><br>
+  <textarea rows="8" id="comment" placeholder="Enter your comment"></textarea><br>
+
+  <input type="submit" value="Submit" class="submit-btn">
+</div>
+
+</body>
+</html>
